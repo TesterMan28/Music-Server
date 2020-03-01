@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// MDBootstrap
+@import '~@jkryszto/mdb-for-laravel/scss/mdb';
+
+// Custom CSS
+@import 'custom';
+
+// Font Awesome Icon path
+//$fa-font-path: "../webfonts";
+
+// Font Awesome Icons
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+
+
+
+
