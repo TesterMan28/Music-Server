@@ -27,4 +27,9 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
+// Social media controller login
+// Inspiration code: https://www.tutsmake.com/laravel-5-facebook-login-with-socialite/
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
+
 

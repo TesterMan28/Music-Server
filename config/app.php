@@ -175,6 +175,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        /*
+         * Laravel Socialite Service Providers
+         * For Facebook...
+         */
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -227,6 +232,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'FFMpeg' => Pbmedia\LaravelFFMpeg\FFMpegFacade::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         
     ],
 

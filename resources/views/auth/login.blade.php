@@ -28,9 +28,6 @@
                         </div>
                     </div>
 
-
-                    
-
                     <!-- Password -->
                     <div class="form-group row">
                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
@@ -46,35 +43,28 @@
                         </div>
                     </div>
 
-                    
-
                     <div class="d-flex justify-content-around">
                         <div>
                             <!-- Remember me -->
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-                                    <div class="custom-control custom-checkbox">
-                                        <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                        <label class="custom-control-label" for="remember">
-                                            {{ __('Remember Me') }}
-                                        </label>
-                                    </div>
-                                </div>
+                                <label class="custom-control-label" for="remember">
+                                    {{ __('Remember Me') }}
+                                </label>
                             </div>
-
-                            
-                        </div>
-                        <div>
                             <!-- Forgot password -->
-                            @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            @endif
+                            <div>
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                            </div>
                         </div>
                     </div>
+
+                    
 
                     <!-- Sign in button -->
                     <button class="btn btn-info btn-block my-4" type="submit">{{ __('Sign In') }}</button>
